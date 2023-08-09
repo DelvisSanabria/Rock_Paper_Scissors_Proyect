@@ -60,6 +60,10 @@ function makeSelection(selection) {
     let message = document.getElementById("winMessage");
     message.innerText = "Que mal ha Ganado la Computadora";
   }
+  if(selection.beats === computerSel.beats){
+    let message = document.getElementById("winMessage");
+    message.innerText = "Es un Empate";
+  }
   addSelectionResult(computerSel, computerwin);
   addSelectionResult(selection, yourWin);
 }
