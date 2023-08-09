@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Piedra,Papel,Tijeras</title>
+    <link rel="stylesheet" href="piedra__pape__tijeras.css" />
+  </head>
+  <body>
+    <main>
+      <div class="title">
+        <h1>Rock,Paper,Scissors</h1>
+      </div>
+      <div class="interface">
+        <div class="container_results">
+          <div class="Scores">
+            <div>You
+              <span class="result_score" id="yourScore">0</span>
+            </div>
+            <div>Computer
+              <span class="result_score" id="compuScore">0</span>
+            </div>
+          </div>
+        </div>
+        <div class="container_gameSelect">
+          <div class="Player_selection">
+            <div class="plOptImg">
+              <div class="hidden" id="rock">
+                <img class="rockJs imgDefault" src="./rsc/therock.jpeg" alt="therock" />
+              </div>
+              <div class="hidden" id="paper">
+                <img class="paperJs imgDefault" src="./rsc/Paper.jpg" alt="paper" />
+              </div>
+              <div class="hidden" id="scissor">
+                <img class="scissorJs imgDefault" src="./rsc/Scizor.jpg" alt="scissors" />
+              </div>
+            </div>
+            <div class="player_options">
+              <button class="selection" data-selection="rock">Rock</button>
+              <button class="selection" data-selection="paper">Paper</button>
+              <button class="selection" data-selection="scissor">Scissors</button>
+            </div>
+          </div>
+          <div class="WinPopUp">
+            <span id="winMessage"></span>
+          </div>
+          <div class="npc_selection">
+            <div class="hidden" id="rockimg">
+              <img class="imgDefault" src="./rsc/therock.jpeg" alt="therock" />
+            </div>
+            <div class="hidden" id="paperimg">
+              <img class="paperJs imgDefault" src="./rsc/Paper.jpg" alt="Paper" />
+            </div>
+            <div class="hidden" id="scissorimg">
+              <img class="scissorJs imgDefault" src="./rsc/Scizor.jpg" alt="scissors" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="results">
+        <div>You
+        </div>
+        <div data-final-column>Computer
+        </div>
+      </div>
+      <div class="reloadDiv">
+        <button class="Reload" onclick="newGame()">Restart Game</button>
+      </div>
+    </main>
+  </body>
+  <script src="./piedra__papel__tijeras.js"></script>
+</html>

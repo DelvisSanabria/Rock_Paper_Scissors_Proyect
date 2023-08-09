@@ -1,0 +1,186 @@
+body {
+  background-color: #f4f5fe;
+  height: 97vh;
+  overflow-x: hidden;
+  font-family: sans-serif;
+}
+
+main {
+  display: grid;
+  grid-template-rows: 100px 1fr 1fr;
+}
+main .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .interface {
+  display: grid;
+  grid-template-rows: 50px 1fr;
+  gap: 5px;
+}
+main .interface .Scores {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  justify-items: center;
+  font-size: 1.3rem;
+  letter-spacing: 0.5rem;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+main .interface .Scores .result_score {
+  font-size: 0.8rem;
+  color: #333;
+}
+main .container_gameSelect {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  justify-content: center;
+  justify-items: center;
+}
+main .Player_selection {
+  display: grid;
+  grid-template-rows: 1fr 100px;
+  justify-items: center;
+}
+main .Player_selection .plOptImg {
+  justify-items: center;
+  align-content: center;
+}
+main .player_options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .player_options button {
+  border: 1px solid #212121;
+  padding: 10px;
+  margin: 5px;
+  background-color: #382727;
+  color: #fff;
+  border-radius: 10px;
+  transition: 100ms;
+}
+main .player_options button:hover {
+  transform: scale(1.1);
+  border: 1px solid #f01a1a;
+}
+main .imgDefault {
+  width: 23vw;
+  height: 20vh;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+main .WinPopUp {
+  font-size: 1rem;
+  font-weight: bolder;
+  color: #382727;
+  word-wrap: break-word;
+}
+main .results_selection_container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-left: 50px;
+  padding-left: 20px;
+  height: 60px;
+  justify-items: center;
+  align-items: center;
+  color: #333;
+  font-size: 2rem;
+  letter-spacing: 0.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+}
+main .results {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  justify-items: center;
+  font-size: 1.3rem;
+  letter-spacing: 0.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+}
+main .reloadDiv {
+  display: flex;
+  justify-content: center;
+}
+main .Reload {
+  border: 1px solid #212121;
+  width: 24rem;
+  padding: 10px;
+  margin: 5px;
+  background-color: #382727;
+  color: #fff;
+  border-radius: 10px;
+  transition: 150ms;
+}
+main .Reload:hover {
+  transform: scale(1.1);
+  border: 1px solid #f01a1a;
+}
+main .hidden {
+  display: none;
+}
+
+@media only screen and (min-width: 700px) {
+  main .imgDefault {
+    width: 28vw;
+    height: 28vh;
+  }
+  main .player_options button {
+    border: 1px solid #212121;
+    padding: 20px;
+    margin: 10px;
+  }
+  main .player_options button:hover {
+    transform: scale(1.1);
+  }
+  main .WinPopUp {
+    font-size: 1.4rem;
+    font-weight: bolder;
+    color: #382727;
+    padding-right: 10px;
+  }
+}
+@media only screen and (min-width: 950px) {
+  main .imgDefault {
+    width: 30vw;
+    height: 30vh;
+  }
+  main .player_options button {
+    border: 1px solid #212121;
+  }
+  main .player_options button:hover {
+    transform: scale(1.1);
+  }
+  main .WinPopUp {
+    font-size: 1.4rem;
+    font-weight: bolder;
+    text-align: center;
+    padding-right: 10px;
+  }
+}
+@media only screen and (min-width: 1100px) {
+  main .imgDefault {
+    width: 35vw;
+    height: 35vh;
+  }
+  main .player_options button {
+    border: 1px solid #212121;
+    width: 150px;
+  }
+  main .player_options button:hover {
+    transform: scale(1.1);
+  }
+  main .WinPopUp {
+    font-size: 1.4rem;
+    font-weight: bolder;
+    text-align: center;
+    padding-right: 10px;
+  }
+}/*# sourceMappingURL=piedra__pape__tijeras.css.map */
