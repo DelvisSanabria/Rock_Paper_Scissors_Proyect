@@ -22,7 +22,7 @@ const finalColumn = document.querySelector("[data-final-column]");
 let cont = 0;
 
 selectButtons.forEach((selectButton) => {
-  selectButton.addEventListener("click", (e) => {
+  selectButton.addEventListener("click", () => {
     if (cont < 5) {
       cont++
       const selectionName = selectButton.dataset.selection;
